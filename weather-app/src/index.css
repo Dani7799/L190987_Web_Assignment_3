@@ -1,0 +1,68 @@
+/* Basic font settings for consistency across browsers */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styling for inline code elements */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Full-screen background settings */
+body {
+  background-image: url("https://wallpapers.com/images/high/clouds-4k-4y7kl2qe79x3lcxi.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Animated glow effect for sun-like icons */
+@keyframes pulsing-glow {
+  0% {
+    filter: drop-shadow(0 0 8px #FFD700);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #FFD700);
+  }
+  100% {
+    filter: drop-shadow(0 0 8px #FFD700);
+  }
+}
+.sun-glow {
+  animation: pulsing-glow 2.5s infinite;
+}
+
+/* Bounce effect for rain icons */
+@keyframes gentle-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+.rainy-drop {
+  animation: gentle-bounce 1.2s infinite alternate;
+}
+
+/* Falling effect for snow icons */
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+.snowflake-fall {
+  animation: snowfall 1.5s infinite alternate;
+}
+
+/* Tailwind CSS base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
